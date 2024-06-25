@@ -1,0 +1,441 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-content h1, .profile h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Home Page Styling */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.about-content {
+    flex: 1;
+    background-color: #008253;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.learn-more-button {
+    background-color: #f0f0f0;
+    color: #008253;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.learn-more-button:hover {
+    background-color: #e0e0e0;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Search Section Styling */
+.search-section {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #e3ffe7, #d9e7ff);
+    position: relative;
+}
+
+.search-container {
+    width: 80%;
+    text-align: center;
+}
+
+.search-container p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 1rem;
+    padding-right: 40px;
+}
+
+.search-bar button {
+    position: absolute;
+    right: 220px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Model Section Styling */
+.model-section {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.model-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.upload-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;  /* Increase height */
+}
+
+.upload-button {
+    background-color: #008253;
+    color: #fff;
+    border: none;
+    padding: 20px 180px; /* Increase padding for larger button */
+    font-size: 1.2rem;  /* Increase font size */
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.upload-button img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.loading-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust height as needed */
+}
+
+.loading-spinner {
+    width: 100px;
+    height: 100px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #008253;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.uploaded-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Accordion Styling */
+.accordion {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #008253;
+    color: #fff;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-button:hover {
+    background-color: #00643f;
+}
+
+.accordion-content {
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+/* Daymaker Section Styling */
+.daymaker-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+}
+
+.daymaker-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.daymaker-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3d3d3d;
+    margin-bottom: 20px;
+}
+
+.daymaker-content p {
+    font-size: 1.2rem;
+    color: #3d3d3d;
+    margin-bottom: 20px;
+}
+
+.daymaker-button {
+    background-color: #008253;
+    color: #3d3d3d;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.daymaker-button:hover {
+    background-color: #91b999;
+}
+
+.daymaker-images {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; /* Add some space between the images */
+    flex-wrap: wrap; /* Allow the images to wrap to the next line if necessary */
+}
+
+.daymaker-images img {
+    width: 48%; /* Make sure the images take up half the container width, with a bit of space for gaps */
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 300px; /* Set a max height to ensure images don't get too large */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a subtle shadow for better appearance */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.daymaker-images img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.daymaker-images img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Module Section Styling */
+.module-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #f5f5f5;
+    gap: 20px; /* Space between cards */
+}
+
+.module-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+    display: flex;
+    flex-direction: column;
+}
+
+.module-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.module-content {
+    padding: 20px;
+}
+
+.module-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.module-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+/* Contact Section Styling */
+.contact-section {
+    width: 100%;
+    padding: 40px 0;
+    background-color: white;
+    color: #000000;
+    text-align: center;
+    
+}
+.contact-section h1 {
+    font-size: 3rem; /* Increase the size */
+    color: #008253; /* Change the color, use any color code you prefer */
+}
+
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.contact-form, .contact-info {
+    width: 45%;
+    
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.contact-form button {
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #e0e0e0;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
